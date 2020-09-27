@@ -1,21 +1,28 @@
 package menus;
+import java.util.Scanner;
 
-public class Menu_Principal {
+
+import funcoesMenu.CadastrarUsuario;
+
+public  class  Menu_Principal {
+	Scanner input = new Scanner(System.in);
 	
-	public void Cadastrar() {
-		//chamar cadastro
+	
+
+	public static void Cadastrar() {
+		CadastrarUsuario.cadastro();
 	}
-	public void Login() {
+	public static void Login() {
 		//chamar Login
 	}
 	
 	
 	
-	public void Tutorial() {
+	public static void Tutorial() {
 		//chamar tutorial
 	}
 	
-	public void Sair() {
+	public static void Sair() {
 		//mensagem
 	}
 }
