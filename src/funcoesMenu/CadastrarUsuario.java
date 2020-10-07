@@ -1,43 +1,52 @@
 package funcoesMenu;
-
-import java.util.Scanner;
+import java.util.*;
 
 import usuario.Usuario;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CadastrarUsuario {
+		public static HashMap<String,Usuario> userMap = new  HashMap<String, Usuario>();
 	
-	
-	
-	
-	public static void cadastro(){
+		public CadastrarUsuario(HashMap<String, Usuario> userMap) {
+			super();
+			CadastrarUsuario.userMap = userMap;
+		}
 		
-		List<Usuario> userList = new ArrayList<Usuario>();
+	public HashMap<String, Usuario> getUserMap() {
+			return userMap;
+		}
+
+		public static void setUserMap(String nome, Usuario usuario) {
+			CadastrarUsuario.userMap.put(nome, usuario);
+		}
+		public static boolean checkOnMap(String nome ) {
+			return userMap.containsKey(nome);
+		}
+
+	public static void cadastro() {
 		
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Usuario  Nome: "  );
+
+		System.out.println("Usuario  Nome: ");
 		String nome1 = input.nextLine();
-		System.out.println("Usuario  senha: "  );
+		System.out.println("Usuario  senha: ");
 		String senha1 = input.nextLine();
 		
-		String procuranome = nome1;
-		if(userList.contains(procuranome)) {
-				System.out.println("nome ja existe");
-			
+		boolean checa = checkOnMap(nome1);
+		System.out.println(checa);
+		if (checa == true) {
+			System.out.println("nome de usuario ja existe");
 		}
-		userList.add(new Usuario(nome1, senha1));
-		
-		for(Usuario user: userList) {
+		else{
 			
-				System.out.println(user);
 			
-		
-		
+			Usuario usuario = new Usuario(nome1, senha1);
+			setUserMap(nome1, usuario);
+			System.out.println(checkOnMap(nome1));
 		}
 		
+		
+//		Usuario usuario = new Usuario(nome1, senha1);
 	}
 
+	
 }

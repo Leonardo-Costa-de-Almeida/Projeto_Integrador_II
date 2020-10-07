@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 import funcoesMenu.CadastrarUsuario;
+import funcoesMenu.LoginUsuario;
 
 public  class  Menu_Principal {
 	Scanner input = new Scanner(System.in);
@@ -13,7 +14,7 @@ public  class  Menu_Principal {
 		CadastrarUsuario.cadastro();
 	}
 	public static void Login() {
-		//chamar Login
+		LoginUsuario.logar();
 	}
 	
 	

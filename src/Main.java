@@ -1,10 +1,16 @@
 import menus.Menu_Principal;
+import tabuleiro.Tabuleiro;
+
 import java.util.Scanner;
 
 
 public class Main {
 
 	public static void main(String[] args) {
+////		Tabuleiro  tabuleiro = new Tabuleiro();
+////		
+//		tabuleiro.criar();
+		
 		Scanner input = new Scanner(System.in);
 		System.out.println("escolha uma opcao: ");
 		String escolha = input.nextLine();
@@ -16,7 +22,7 @@ public class Main {
 				Menu_Principal.Cadastrar();
 				break;
 			case "2": 
-				System.out.println("caso seja 2");
+				Menu_Principal.Login();
 				break;
 				
 			case "4":
