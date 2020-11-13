@@ -1,12 +1,13 @@
 package usuario;
 
-public class Usuario {
+public class Usuario implements Comparable<Usuario>{
 	
 	private String nome;
 	private String senha;
 	private int id;
+	private int pontos;
 	
-	// construtor
+	// Constructor
 	
 	
 	
@@ -35,13 +36,22 @@ public class Usuario {
 		return id;
 	}
 	
-	public String getNome() {
+	public String getNome(String usuarioLogado) {
 		return nome;
 	}
 	
 	public  String getSenha() {
 		return senha;
 	}
+	
+	public int getPontos() {
+		return pontos;
+	}
+
+	public  void setPontos(int pontos) {
+		this.pontos += pontos;
+	}
+	
 	
 	@Override
 	public int hashCode() {
@@ -70,6 +80,14 @@ public class Usuario {
 
 	@Override
 	public String toString() {
-		return this.nome + " " + this.senha + " " + this.id;
+		return this.nome + " " + this.senha + " " + this.id + " " + this.pontos + " ";
 	}
+
+	@Override
+	public int compareTo(Usuario u) {
+		
+		return this.pontos - u.getPontos();
+	}
+
+	
 }

@@ -1,12 +1,14 @@
 package menus;
-import java.util.Scanner;
+
 
 
 import funcoesMenu.CadastrarUsuario;
 import funcoesMenu.LoginUsuario;
 
+import funcoesMenu.Tutorial;
+
 public  class  Menu_Principal {
-	Scanner input = new Scanner(System.in);
+	
 	
 	
 
@@ -21,9 +23,9 @@ public  class  Menu_Principal {
 	
 	public static void Tutorial() {
 		//chamar tutorial
+		Tutorial.tutorial();
+		
 	}
 	
-	public static void Sair() {
-		//mensagem
-	}
+	
 }
