@@ -43,37 +43,37 @@ public class MenuUsuario implements ActionListener{
 		panel.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Escolher");
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnNewButton.setForeground(Color.GREEN);
-		btnNewButton.setBackground(Color.GRAY);
-		btnNewButton.setBounds(260, 199, 89, 23);
-		btnNewButton.addActionListener(new MenuUsuario());
-		panel.add(btnNewButton);
+		JButton btnEscolher = new JButton("Escolher");
+		btnEscolher.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnEscolher.setForeground(Color.GREEN);
+		btnEscolher.setBackground(Color.GRAY);
+		btnEscolher.setBounds(260, 199, 89, 23);
+		btnEscolher.addActionListener(new MenuUsuario());
+		panel.add(btnEscolher);
 		
-		JLabel lblNewLabel = new JLabel("1 - JOGAR");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setBounds(207, 81, 97, 14);
-		panel.add(lblNewLabel);
+		JLabel lblJogar = new JLabel("1 - JOGAR");
+		lblJogar.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblJogar.setForeground(Color.GREEN);
+		lblJogar.setBounds(207, 81, 97, 14);
+		panel.add(lblJogar);
 		
-		JLabel lblNewLabel_1 = new JLabel("2 - RANK");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_1.setForeground(Color.GREEN);
-		lblNewLabel_1.setBounds(207, 106, 167, 14);
-		panel.add(lblNewLabel_1);
+		JLabel lblRank = new JLabel("2 - RANK");
+		lblRank.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblRank.setForeground(Color.GREEN);
+		lblRank.setBounds(207, 106, 167, 14);
+		panel.add(lblRank);
 		
-		JLabel lblNewLabel_2 = new JLabel("3 - COMO JOGAR");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_2.setForeground(Color.GREEN);
-		lblNewLabel_2.setBounds(207, 131, 117, 14);
-		panel.add(lblNewLabel_2);
+		JLabel lblComoJogar = new JLabel("3 - COMO JOGAR");
+		lblComoJogar.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblComoJogar.setForeground(Color.GREEN);
+		lblComoJogar.setBounds(207, 131, 117, 14);
+		panel.add(lblComoJogar);
 		
-		JLabel lblNewLabel_3 = new JLabel("4 - LOGOUT");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_3.setForeground(Color.GREEN);
-		lblNewLabel_3.setBounds(217, 156, 79, 14);
-		panel.add(lblNewLabel_3);
+		JLabel lblLogout = new JLabel("4 - LOGOUT");
+		lblLogout.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblLogout.setForeground(Color.GREEN);
+		lblLogout.setBounds(217, 156, 79, 14);
+		panel.add(lblLogout);
 		
 		JLabel lblBemVindo = new JLabel("Bem - vindos");
 		lblBemVindo.setFont(new Font("Tahoma", Font.BOLD, 14));
@@ -81,25 +81,25 @@ public class MenuUsuario implements ActionListener{
 		lblBemVindo.setBounds(509, 59, 124, 14);
 		panel.add(lblBemVindo);
 		
-		JLabel lblNewLabel_4 = new JLabel("New label");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_4.setForeground(Color.GREEN);
-		lblNewLabel_4.setBounds(509, 84, 152, 23);
-		panel.add(lblNewLabel_4);
+		JLabel lblNomeUser1 = new JLabel("");
+		lblNomeUser1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNomeUser1.setForeground(Color.GREEN);
+		lblNomeUser1.setBounds(509, 84, 152, 23);
+		panel.add(lblNomeUser1);
 		frameMenuUsuario.setVisible(true);
-		lblNewLabel_4.setText(LoginUsuario.usuarioLogado[0]);
+		lblNomeUser1.setText(LoginUsuario.usuarioLogado[0]);
 		
-		JLabel label = new JLabel((String)LoginUsuario.usuarioLogado[1]);
-		label.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		label.setForeground(Color.GREEN);
-		label.setBounds(509, 109, 152, 23);
-		panel.add(label);
+		JLabel lblNomeUser2 = new JLabel((String)LoginUsuario.usuarioLogado[1]);
+		lblNomeUser2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNomeUser2.setForeground(Color.GREEN);
+		lblNomeUser2.setBounds(509, 109, 152, 23);
+		panel.add(lblNomeUser2);
 		
-		JLabel label_1 = new JLabel("Monster Dama!");
-		label_1.setForeground(Color.GREEN);
-		label_1.setFont(new Font("Tahoma", Font.BOLD, 30));
-		label_1.setBounds(186, 11, 233, 38);
-		panel.add(label_1);
+		JLabel lblMonsterDama = new JLabel("Monster Dama!");
+		lblMonsterDama.setForeground(Color.GREEN);
+		lblMonsterDama.setFont(new Font("Tahoma", Font.BOLD, 30));
+		lblMonsterDama.setBounds(186, 11, 233, 38);
+		panel.add(lblMonsterDama);
 	}
 
 

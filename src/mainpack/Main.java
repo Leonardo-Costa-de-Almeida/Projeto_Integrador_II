@@ -28,9 +28,7 @@ public class Main implements ActionListener {
 	 * @wbp.parser.entryPoint
 	 */
 	public static void main(String[] args) {
-//		Tabuleiro  tabuleiro = new Tabuleiro();
-		
-//	tabuleiro.criar();
+		//labels e botoes do jFrame
 		
 		JPanel panel = new JPanel();
 		panel.setForeground(Color.RED);
@@ -48,37 +46,37 @@ public class Main implements ActionListener {
 		panel.add(textField);
 		textField.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Escolher");
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 11));
-		btnNewButton.setForeground(Color.GREEN);
-		btnNewButton.setBackground(Color.GRAY);
-		btnNewButton.setBounds(341, 178, 91, 23);
-		btnNewButton.addActionListener(new Main());
-		panel.add(btnNewButton);
+		JButton btnEscolher = new JButton("Escolher");
+		btnEscolher.setFont(new Font("Tahoma", Font.BOLD, 11));
+		btnEscolher.setForeground(Color.GREEN);
+		btnEscolher.setBackground(Color.GRAY);
+		btnEscolher.setBounds(341, 178, 91, 23);
+		btnEscolher.addActionListener(new Main());
+		panel.add(btnEscolher);
 		
-		JLabel lblNewLabel = new JLabel("1 - CADASTRAR");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setBounds(284, 63, 111, 14);
-		panel.add(lblNewLabel);
+		JLabel lblCadastrar = new JLabel("1 - CADASTRAR");
+		lblCadastrar.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblCadastrar.setForeground(Color.GREEN);
+		lblCadastrar.setBounds(284, 63, 111, 14);
+		panel.add(lblCadastrar);
 		
-		JLabel lblNewLabel_1 = new JLabel("2 - LOGIN");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_1.setForeground(Color.GREEN);
-		lblNewLabel_1.setBounds(284, 88, 79, 14);
-		panel.add(lblNewLabel_1);
+		JLabel lblLogin = new JLabel("2 - LOGIN");
+		lblLogin.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblLogin.setForeground(Color.GREEN);
+		lblLogin.setBounds(284, 88, 79, 14);
+		panel.add(lblLogin);
 		
-		JLabel lblNewLabel_2 = new JLabel("3 - TUTORIAL");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_2.setForeground(Color.GREEN);
-		lblNewLabel_2.setBounds(284, 113, 100, 14);
-		panel.add(lblNewLabel_2);
+		JLabel lblTutorial = new JLabel("3 - TUTORIAL");
+		lblTutorial.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblTutorial.setForeground(Color.GREEN);
+		lblTutorial.setBounds(284, 113, 100, 14);
+		panel.add(lblTutorial);
 		
-		JLabel lblNewLabel_3 = new JLabel("4 - SAIR");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 11));
-		lblNewLabel_3.setForeground(Color.GREEN);
-		lblNewLabel_3.setBounds(294, 145, 79, 14);
-		panel.add(lblNewLabel_3);
+		JLabel lblSair = new JLabel("4 - SAIR");
+		lblSair.setFont(new Font("Tahoma", Font.BOLD, 11));
+		lblSair.setForeground(Color.GREEN);
+		lblSair.setBounds(294, 145, 79, 14);
+		panel.add(lblSair);
 		
 		JLabel lblCriadoPorLeonardo = new JLabel("Desenvolvido por Leonardo Almeida e Rafel Kampa");
 		lblCriadoPorLeonardo.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 11));
@@ -97,7 +95,7 @@ public class Main implements ActionListener {
 		
 		
 	}
-
+//click do botao, e menu do programa principal.
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {

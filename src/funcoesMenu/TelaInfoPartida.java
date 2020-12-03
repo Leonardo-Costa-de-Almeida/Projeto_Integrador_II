@@ -25,7 +25,7 @@ public class TelaInfoPartida {
 	public static JFrame frameInfoPartida;
 	private static JPanel panel;
 	
-	public static int mais = 0;
+	
 	/**
 	 * @wbp.parser.entryPoint
 	 */
@@ -43,10 +43,10 @@ public class TelaInfoPartida {
 		frameInfoPartida.setLocation(1400, 250);
 		frameInfoPartida.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("Cancelar Partida");
-		btnNewButton.setForeground(Color.GREEN);
-		btnNewButton.setBackground(Color.GRAY);
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnCancelar = new JButton("Cancelar Partida");
+		btnCancelar.setForeground(Color.GREEN);
+		btnCancelar.setBackground(Color.GRAY);
+		btnCancelar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Dama.frameDama.dispose();
 				Dama.gameInProgress = false;
@@ -55,13 +55,13 @@ public class TelaInfoPartida {
 				
 			}
 		});
-		btnNewButton.setBounds(109, 315, 227, 23);
-		frameInfoPartida.getContentPane().add(btnNewButton);
+		btnCancelar.setBounds(109, 315, 227, 23);
+		frameInfoPartida.getContentPane().add(btnCancelar);
 		
-		JLabel lblNewLabel = new JLabel("Para cancelar a partida, clique no bot\u00E3o abaixo");
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setBounds(109, 281, 266, 23);
-		frameInfoPartida.getContentPane().add(lblNewLabel);
+		JLabel infoCancelar = new JLabel("Para cancelar a partida, clique no bot\u00E3o abaixo");
+		infoCancelar.setForeground(Color.GREEN);
+		infoCancelar.setBounds(109, 281, 266, 23);
+		frameInfoPartida.getContentPane().add(infoCancelar);
 		
 		vezVerde = new JLabel("Vez do Verde");
 		vezVerde.setForeground(Color.GREEN);
@@ -73,15 +73,15 @@ public class TelaInfoPartida {
 		vezBranco.setBounds(43, 215, 113, 23);
 		frameInfoPartida.getContentPane().add(vezBranco);
 		
-		JLabel lblNewLabel_1 = new JLabel("Pontos Verde: ");
-		lblNewLabel_1.setForeground(Color.GREEN);
-		lblNewLabel_1.setBounds(216, 185, 99, 14);
-		frameInfoPartida.getContentPane().add(lblNewLabel_1);
+		JLabel lblPtsVerde = new JLabel("Pontos Verde: ");
+		lblPtsVerde.setForeground(Color.GREEN);
+		lblPtsVerde.setBounds(216, 185, 99, 14);
+		frameInfoPartida.getContentPane().add(lblPtsVerde);
 		
-		JLabel lblPontosBranco = new JLabel("Pontos Branco: ");
-		lblPontosBranco.setForeground(Color.WHITE);
-		lblPontosBranco.setBounds(216, 219, 107, 14);
-		frameInfoPartida.getContentPane().add(lblPontosBranco);
+		JLabel lblPtsBranco = new JLabel("Pontos Branco: ");
+		lblPtsBranco.setForeground(Color.WHITE);
+		lblPtsBranco.setBounds(216, 219, 107, 14);
+		frameInfoPartida.getContentPane().add(lblPtsBranco);
 		
 		nPontosVerde = new JLabel("0");
 		nPontosVerde.setForeground(Color.GREEN);
@@ -93,15 +93,15 @@ public class TelaInfoPartida {
 		nPontosBranco.setBounds(325, 219, 60, 14);
 		frameInfoPartida.getContentPane().add(nPontosBranco);
 		
-		JLabel lblNewLabel_3 = new JLabel("Pontos");
-		lblNewLabel_3.setForeground(Color.GREEN);
-		lblNewLabel_3.setBounds(290, 156, 60, 14);
-		frameInfoPartida.getContentPane().add(lblNewLabel_3);
+		JLabel lblPontos_2 = new JLabel("Pontos");
+		lblPontos_2.setForeground(Color.GREEN);
+		lblPontos_2.setBounds(290, 156, 60, 14);
+		frameInfoPartida.getContentPane().add(lblPontos_2);
 		
-		JLabel lblNewLabel_2 = new JLabel(LoginUsuario.usuarioLogado[0]);
-		lblNewLabel_2.setForeground(Color.GREEN);
-		lblNewLabel_2.setBounds(43, 11, 99, 28);
-		frameInfoPartida.getContentPane().add(lblNewLabel_2);
+		JLabel lblPontos_3 = new JLabel(LoginUsuario.usuarioLogado[0]);
+		lblPontos_3.setForeground(Color.GREEN);
+		lblPontos_3.setBounds(43, 11, 99, 28);
+		frameInfoPartida.getContentPane().add(lblPontos_3);
 		
 		JLabel lblUser = new JLabel(LoginUsuario.usuarioLogado[1]);
 		lblUser.setForeground(Color.WHITE);
@@ -118,8 +118,8 @@ public class TelaInfoPartida {
 		lblJogandoComAs_1.setBounds(24, 37, 153, 28);
 		frameInfoPartida.getContentPane().add(lblJogandoComAs_1);
 		frameInfoPartida.setVisible(true);
-		mais = mais + 1;
-		System.out.println(mais);
+		
+		
 		
 	}
 	public static void vezVerde() {

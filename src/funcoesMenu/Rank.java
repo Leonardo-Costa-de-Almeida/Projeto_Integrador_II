@@ -44,20 +44,20 @@ public class Rank {
 		frameRank.getContentPane().setLayout(null);
 	
 			
-		JLabel lblNewLabel = new JLabel(rank.get(rank.size()-1).getNome(null));
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setBounds(311, 132, 117, 14);
-		frameRank.getContentPane().add(lblNewLabel);
+		JLabel lblNome = new JLabel(rank.get(rank.size()-1).getNome(null));
+		lblNome.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNome.setForeground(Color.GREEN);
+		lblNome.setBounds(311, 132, 117, 14);
+		frameRank.getContentPane().add(lblNome);
 		
 		
 		
 		
-		JLabel lblNewLabel_1 = new JLabel(rank.get(rank.size()-2).getNome(null));
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel_1.setForeground(Color.GREEN);
-		lblNewLabel_1.setBounds(311, 167, 117, 14);
-		frameRank.getContentPane().add(lblNewLabel_1);
+		JLabel lblNome2 = new JLabel(rank.get(rank.size()-2).getNome(null));
+		lblNome2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNome2.setForeground(Color.GREEN);
+		lblNome2.setBounds(311, 167, 117, 14);
+		frameRank.getContentPane().add(lblNome2);
 		
 		JLabel label = new JLabel(rank.get(rank.size()-3).getNome(null));
 		label.setForeground(Color.GREEN);
@@ -65,29 +65,29 @@ public class Rank {
 		label.setBounds(311, 194, 117, 14);
 		frameRank.getContentPane().add(label);
 		
-		JLabel lblNewLabel_2 = new JLabel("Rank 1 - ");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_2.setForeground(Color.GREEN);
-		lblNewLabel_2.setBounds(241, 132, 74, 14);
-		frameRank.getContentPane().add(lblNewLabel_2);
+		JLabel lblRank_1 = new JLabel("Rank 1 - ");
+		lblRank_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblRank_1.setForeground(Color.GREEN);
+		lblRank_1.setBounds(241, 132, 74, 14);
+		frameRank.getContentPane().add(lblRank_1);
 		
-		JLabel lblRank = new JLabel("Rank 2   - ");
-		lblRank.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblRank.setForeground(Color.GREEN);
-		lblRank.setBounds(241, 166, 74, 14);
-		frameRank.getContentPane().add(lblRank);
+		JLabel lblRank_2 = new JLabel("Rank 2   - ");
+		lblRank_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblRank_2.setForeground(Color.GREEN);
+		lblRank_2.setBounds(241, 166, 74, 14);
+		frameRank.getContentPane().add(lblRank_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("RANK TOP 3 JOGADORES!!!");
-		lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 33));
-		lblNewLabel_3.setForeground(Color.GREEN);
-		lblNewLabel_3.setBounds(141, 60, 530, 26);
-		frameRank.getContentPane().add(lblNewLabel_3);
+		JLabel lblTop3 = new JLabel("RANK TOP 3 JOGADORES!!!");
+		lblTop3.setFont(new Font("Tahoma", Font.BOLD, 33));
+		lblTop3.setForeground(Color.GREEN);
+		lblTop3.setBounds(141, 60, 530, 26);
+		frameRank.getContentPane().add(lblTop3);
 		
-		JLabel lblNewLabel_4 = new JLabel("Rank 3     -");
-		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel_4.setForeground(Color.GREEN);
-		lblNewLabel_4.setBounds(241, 193, 74, 14);
-		frameRank.getContentPane().add(lblNewLabel_4);
+		JLabel lblRank_3 = new JLabel("Rank 3     -");
+		lblRank_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblRank_3.setForeground(Color.GREEN);
+		lblRank_3.setBounds(241, 193, 74, 14);
+		frameRank.getContentPane().add(lblRank_3);
 		
 		
 		
@@ -97,79 +97,79 @@ public class Rank {
 		lblPontos.setBounds(438, 134, 74, 14);
 		frameRank.getContentPane().add(lblPontos);
 		
-		JLabel label_1 = new JLabel(String.valueOf(rank.get(rank.size()-1).getPontos()));
-		label_1.setForeground(Color.GREEN);
-		label_1.setFont(new Font("Tahoma", Font.BOLD, 14));
-		label_1.setBounds(522, 134, 117, 14);
-		frameRank.getContentPane().add(label_1);
+		JLabel lblPontosRank1 = new JLabel(String.valueOf(rank.get(rank.size()-1).getPontos()));
+		lblPontosRank1.setForeground(Color.GREEN);
+		lblPontosRank1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPontosRank1.setBounds(522, 134, 117, 14);
+		frameRank.getContentPane().add(lblPontosRank1);
 		
-		JLabel lblPontos_1 = new JLabel("Pontos:");
-		lblPontos_1.setForeground(Color.GREEN);
-		lblPontos_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblPontos_1.setBounds(438, 168, 74, 14);
-		frameRank.getContentPane().add(lblPontos_1);
+		JLabel lblPontosRank2 = new JLabel("Pontos:");
+		lblPontosRank2.setForeground(Color.GREEN);
+		lblPontosRank2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblPontosRank2.setBounds(438, 168, 74, 14);
+		frameRank.getContentPane().add(lblPontosRank2);
 		
-		JLabel label_2 = new JLabel(String.valueOf(rank.get(rank.size()-2).getPontos()));
-		label_2.setForeground(Color.GREEN);
-		label_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_2.setBounds(522, 168, 117, 14);
-		frameRank.getContentPane().add(label_2);
+		JLabel lblRankPontos3 = new JLabel(String.valueOf(rank.get(rank.size()-2).getPontos()));
+		lblRankPontos3.setForeground(Color.GREEN);
+		lblRankPontos3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblRankPontos3.setBounds(522, 168, 117, 14);
+		frameRank.getContentPane().add(lblRankPontos3);
 		
-		JLabel lblPontos_2 = new JLabel("Pontos:");
-		lblPontos_2.setForeground(Color.GREEN);
-		lblPontos_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblPontos_2.setBounds(438, 194, 74, 14);
-		frameRank.getContentPane().add(lblPontos_2);
+		JLabel lblPontosRank4 = new JLabel("Pontos:");
+		lblPontosRank4.setForeground(Color.GREEN);
+		lblPontosRank4.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblPontosRank4.setBounds(438, 194, 74, 14);
+		frameRank.getContentPane().add(lblPontosRank4);
 		
-		JLabel label_3 = new JLabel(String.valueOf(rank.get(rank.size()-3).getPontos()));
-		label_3.setForeground(Color.GREEN);
-		label_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_3.setBounds(522, 194, 117, 14);
-		frameRank.getContentPane().add(label_3);
+		JLabel lblRankPontos5 = new JLabel(String.valueOf(rank.get(rank.size()-3).getPontos()));
+		lblRankPontos5.setForeground(Color.GREEN);
+		lblRankPontos5.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblRankPontos5.setBounds(522, 194, 117, 14);
+		frameRank.getContentPane().add(lblRankPontos5);
 		
-		JButton btnNewButton = new JButton("Voltar");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnVoltar = new JButton("Voltar");
+		btnVoltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				MenuUsuario.menu2();
 				frameRank.dispose();
 			}
 		});
-		btnNewButton.setBackground(Color.GRAY);
-		btnNewButton.setForeground(Color.GREEN);
-		btnNewButton.setBounds(595, 396, 89, 23);
-		frameRank.getContentPane().add(btnNewButton);
+		btnVoltar.setBackground(Color.GRAY);
+		btnVoltar.setForeground(Color.GREEN);
+		btnVoltar.setBounds(595, 396, 89, 23);
+		frameRank.getContentPane().add(btnVoltar);
 		
-		JLabel lblNewLabel_5 = new JLabel(LoginUsuario.usuarioLogado[0]);
-		lblNewLabel_5.setForeground(Color.GREEN);
-		lblNewLabel_5.setBounds(46, 346, 83, 14);
-		frameRank.getContentPane().add(lblNewLabel_5);
+		JLabel lblNomeUser1 = new JLabel(LoginUsuario.usuarioLogado[0]);
+		lblNomeUser1.setForeground(Color.GREEN);
+		lblNomeUser1.setBounds(46, 346, 83, 14);
+		frameRank.getContentPane().add(lblNomeUser1);
 		
-		JLabel lblUserlog = new JLabel(LoginUsuario.usuarioLogado[1]);
-		lblUserlog.setForeground(Color.GREEN);
-		lblUserlog.setBounds(154, 346, 83, 14);
-		frameRank.getContentPane().add(lblUserlog);
+		JLabel lblNomeUser2 = new JLabel(LoginUsuario.usuarioLogado[1]);
+		lblNomeUser2.setForeground(Color.GREEN);
+		lblNomeUser2.setBounds(154, 346, 83, 14);
+		frameRank.getContentPane().add(lblNomeUser2);
 		
-		JLabel lblNewLabel_6 = new JLabel("Sua pontua\u00E7\u00E3o:");
-		lblNewLabel_6.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblNewLabel_6.setForeground(Color.GREEN);
-		lblNewLabel_6.setBounds(46, 309, 191, 26);
-		frameRank.getContentPane().add(lblNewLabel_6);
+		JLabel lblSeusPontos = new JLabel("Sua pontua\u00E7\u00E3o:");
+		lblSeusPontos.setFont(new Font("Tahoma", Font.BOLD, 18));
+		lblSeusPontos.setForeground(Color.GREEN);
+		lblSeusPontos.setBounds(46, 309, 191, 26);
+		frameRank.getContentPane().add(lblSeusPontos);
 		
-		JLabel lblNewLabel_7 = new JLabel(String.valueOf(CadastrarUsuario.userMap.get(LoginUsuario.usuarioLogado[0]).getPontos()));
-		lblNewLabel_7.setForeground(Color.GREEN);
-		lblNewLabel_7.setBounds(46, 379, 83, 14);
-		frameRank.getContentPane().add(lblNewLabel_7);
+		JLabel lblUserPontos = new JLabel(String.valueOf(CadastrarUsuario.userMap.get(LoginUsuario.usuarioLogado[0]).getPontos()));
+		lblUserPontos.setForeground(Color.GREEN);
+		lblUserPontos.setBounds(46, 379, 83, 14);
+		frameRank.getContentPane().add(lblUserPontos);
 		
-		JLabel lblPontosuser = new JLabel(String.valueOf(CadastrarUsuario.userMap.get(LoginUsuario.usuarioLogado[1]).getPontos()));
-		lblPontosuser.setForeground(Color.GREEN);
-		lblPontosuser.setBounds(154, 379, 83, 14);
-		frameRank.getContentPane().add(lblPontosuser);
+		JLabel lblPontosuser2 = new JLabel(String.valueOf(CadastrarUsuario.userMap.get(LoginUsuario.usuarioLogado[1]).getPontos()));
+		lblPontosuser2.setForeground(Color.GREEN);
+		lblPontosuser2.setBounds(154, 379, 83, 14);
+		frameRank.getContentPane().add(lblPontosuser2);
 		
-		JLabel label_4 = new JLabel("Monster Dama!");
-		label_4.setForeground(Color.GREEN);
-		label_4.setFont(new Font("Tahoma", Font.BOLD, 30));
-		label_4.setBounds(241, 11, 233, 38);
-		frameRank.getContentPane().add(label_4);
+		JLabel lblMonterDama = new JLabel("Monster Dama!");
+		lblMonterDama.setForeground(Color.GREEN);
+		lblMonterDama.setFont(new Font("Tahoma", Font.BOLD, 30));
+		lblMonterDama.setBounds(241, 11, 233, 38);
+		frameRank.getContentPane().add(lblMonterDama);
 		
 		frameRank.setVisible(true);
 		

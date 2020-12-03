@@ -34,27 +34,27 @@ public class Tutorial {
 		frameTutorial.getContentPane().setLayout(null);
 		frameTutorial.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		
-		JLabel lblNewLabel = new JLabel("TUTORIAL");
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setBounds(305, 11, 111, 38);
-		frameTutorial.getContentPane().add(lblNewLabel);
+		JLabel lblTurorial = new JLabel("TUTORIAL");
+		lblTurorial.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblTurorial.setForeground(Color.GREEN);
+		lblTurorial.setBounds(305, 11, 111, 38);
+		frameTutorial.getContentPane().add(lblTurorial);
 		
-		JLabel lblNewLabel_2 = new JLabel("Primeiramente efetue o Cadastro!");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblNewLabel_2.setForeground(Color.GREEN);
-		lblNewLabel_2.setBounds(118, 60, 258, 25);
-		frameTutorial.getContentPane().add(lblNewLabel_2);
+		JLabel lblCadastro = new JLabel("Primeiramente efetue o Cadastro!");
+		lblCadastro.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		lblCadastro.setForeground(Color.GREEN);
+		lblCadastro.setBounds(118, 60, 258, 25);
+		frameTutorial.getContentPane().add(lblCadastro);
 		
-		JLabel lblNewLabel_3 = new JLabel("Para efutar o cadastro, escolha a op\u00E7\u00E3o CADASTRAR no menu principal.");
-		lblNewLabel_3.setForeground(Color.GREEN);
-		lblNewLabel_3.setBounds(118, 84, 459, 25);
-		frameTutorial.getContentPane().add(lblNewLabel_3);
+		JLabel lblCadastro_2 = new JLabel("Para efutar o cadastro, escolha a op\u00E7\u00E3o CADASTRAR no menu principal.");
+		lblCadastro_2.setForeground(Color.GREEN);
+		lblCadastro_2.setBounds(118, 84, 459, 25);
+		frameTutorial.getContentPane().add(lblCadastro_2);
 		
-		JLabel lblNewLabel_4 = new JLabel("Escolha um nome de usuario e uma senha.");
-		lblNewLabel_4.setForeground(Color.GREEN);
-		lblNewLabel_4.setBounds(118, 108, 402, 14);
-		frameTutorial.getContentPane().add(lblNewLabel_4);
+		JLabel lblNomeSenha = new JLabel("Escolha um nome de usuario e uma senha.");
+		lblNomeSenha.setForeground(Color.GREEN);
+		lblNomeSenha.setBounds(118, 108, 402, 14);
+		frameTutorial.getContentPane().add(lblNomeSenha);
 		
 		JLabel lblEmSeguidaClique = new JLabel("Em seguida clique no botao Cadastrar e verifique se os dados s\u00E3o v\u00E1lidos");
 		lblEmSeguidaClique.setForeground(Color.GREEN);
@@ -109,18 +109,18 @@ public class Tutorial {
 		lblOsDoisJogadores.setBounds(118, 345, 518, 20);
 		frameTutorial.getContentPane().add(lblOsDoisJogadores);
 		
-		JButton btnNewButton = new JButton("Voltar");
-		btnNewButton.setForeground(Color.GREEN);
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton voltar = new JButton("Voltar");
+		voltar.setForeground(Color.GREEN);
+		voltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Main.main(null);
 				frameTutorial.dispose();
 				
 			}
 		});
-		btnNewButton.setBackground(Color.GRAY);
-		btnNewButton.setBounds(569, 376, 89, 23);
-		frameTutorial.getContentPane().add(btnNewButton);
+		voltar.setBackground(Color.GRAY);
+		voltar.setBounds(569, 376, 89, 23);
+		frameTutorial.getContentPane().add(voltar);
 		
 		frameTutorial.setVisible(true);
 	}

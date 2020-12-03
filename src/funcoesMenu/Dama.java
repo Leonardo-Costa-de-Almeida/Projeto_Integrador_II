@@ -15,7 +15,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 	private static final long serialVersionUID = 1L; 
 	public static int width = 720, height = width; //parametro de quadrado
 	public static final int tamanhoCasa = width/8; //8 casas para o tabuleiro
-	public static final int casasPorLinha = width/tamanhoCasa; // == 8 
+	public static final int casasPorLinha = width/tamanhoCasa; 
 	public static int[][] baseGameData = new int[casasPorLinha][casasPorLinha]; //guarda o layout do tabuleiro 8x8
 	public static int[][] gameData = new int[casasPorLinha][casasPorLinha]; //guarda as pecas no tabuleiro 8x8
 	public static final int VAZIO = 0, VERDE = 1, DAMA_VERDE = 2, BRANCO = 3, DAMA_BRANCA = 4; //Representacao de pecas por valores pro tabuleiro
@@ -52,7 +52,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 		return gameOverInterno(0, 0, 0, 0);
 	}
 	
-	public boolean gameOverInterno(int col, int linha, int verde, int branco){ //pratica recusiva
+	public boolean gameOverInterno(int col, int linha, int verde, int branco){ 
 		if(gameData[col][linha] == VERDE || gameData[col][linha] == DAMA_VERDE)
 			verde += 1;
 		if(gameData[col][linha] == BRANCO || gameData[col][linha] == DAMA_BRANCA)
@@ -223,6 +223,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 			guardaCol = col;
 			guardaLinha = linha; 
 			pegaJogadasDisponiveis(col, linha);
+			
 		}
 		else if(jogando == true && jogadasPossiveis[col][linha] == 1){
 			jogada(col, linha, guardaCol, guardaLinha);
@@ -338,11 +339,11 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 				
 				 if(gameData[col][linha] == VERDE ||gameData[col][linha] == DAMA_VERDE) {
 					 
-					 	pontosVerde = pontosVerde + 200;
+					 	pontosVerde = pontosVerde + 100;
 						TelaInfoPartida.pontosVerde();
 				 }else if(gameData[col][linha] == BRANCO || gameData[col][linha] == DAMA_BRANCA) {
 											
-							pontosBranco = pontosBranco +200;
+							pontosBranco = pontosBranco +100;
 							TelaInfoPartida.pontosBranco();
 					  }
 					}
@@ -381,13 +382,13 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 					if(podePular(col, linha, i, linhaCima) == true){
 						int pulaCol = pegaPulo(col, linha, i, linhaCima)[0];
 						int pulaLinha = pegaPulo(col, linha, i, linhaCima)[1];
-						System.out.println("entrou if 1");
+						
 						jogadasPossiveis[pulaCol][pulaLinha] = 1;
 					}
 				}
 				else if(baseGameData[i][linhaCima] == 1 && gameData[i][linhaCima] == 0)
 					jogadasPossiveis[i][linhaCima] = 1;
-				    System.out.println("entrou else if 1");
+				   
 			}
 		}
 		else if(col == (casasPorLinha - 1) && linha != 0){ //X=max, Y nao é 0
@@ -396,12 +397,12 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 						int pulaCol = pegaPulo(col, linha, col-1, linhaCima)[0];
 						int pulaLinha = pegaPulo(col, linha, col-1, linhaCima)[1];
 						jogadasPossiveis[pulaCol][pulaLinha] = 1;
-						System.out.println("entrou if 2");
+						
 					}
 				}
 				else if(baseGameData[col-1][linhaCima] == 1 && gameData[col-1][linhaCima] == 0)
 					jogadasPossiveis[col-1][linhaCima] = 1;
-				System.out.println("entrou else if 2");
+				
 		}
 		else if(col != casasPorLinha - 1 && col != 0 && linha != 0){
 			for(int i = col-1; i <= col+1; i++){
@@ -410,7 +411,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 						int pulaCol = pegaPulo(col, linha, i, linhaCima)[0];
 						int pulaLinha = pegaPulo(col, linha, i, linhaCima)[1];
 						jogadasPossiveis[pulaCol][pulaLinha] = 1;
-						System.out.println("entrou if 3");
+						
 					}
 				}
 				else if(baseGameData[i][linhaCima] == 1 && gameData[i][linhaCima] == 0)
@@ -515,7 +516,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 			
 		else {
 			
-			if(gameData[col][linha] == BRANCO || gameData[col][linha] == DAMA_BRANCA || gameData[col][linha] == DAMA_VERDE  && gameData[col+2][linha+2] == 0 && gameData[col+1][linha+1] != 0) {
+			if((gameData[col][linha] == BRANCO  && gameData[col+1][linha+1] != VAZIO)|| (gameData[col][linha] == DAMA_BRANCA && gameData[col+1][linha+1] != VAZIO)|| (gameData[col][linha] == DAMA_VERDE  && gameData[col+2][linha+2] == 0 && gameData[col+1][linha+1] != VAZIO) ) {
 				return new int[] {col+2, linha+2};
 			}
 			return new int[] {col, linha};
@@ -523,7 +524,7 @@ public class Dama extends JPanel implements ActionListener, MouseListener {
 			
 	}
 	
-	// Metodos Obrigatorios  para o os eventos de Mouse Funcionar
+	// Metodos Obrigatorios  para os eventos de Mouse Funcionar
 	public void mouseClicked(MouseEvent e) {}
 	public void mouseReleased(MouseEvent e) {}
 	public void mouseEntered(MouseEvent e) {}
